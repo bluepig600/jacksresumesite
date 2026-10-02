@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jack | Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <header class="hero">
+      <nav class="nav">
+        <span class="brand">Jack Resume</span>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <section class="hero-content">
+        <img
+          class="profile-image"
+          src="https://github.com/user-attachments/assets/c0f5ae9a-e198-4639-afcb-e725e24c3830"
+          alt="Profile"
+        />
+        <div>
+          <p class="eyebrow">Hi, I’m Jack</p>
+          <h1>Creative Developer Building Clean, Modern Web Experiences</h1>
+          <p class="lead">
+            Front-end focused engineer with a strong eye for design, performance,
+            and user-first interactions.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Let’s Connect</a>
+            <a class="btn btn-secondary" href="#projects">View Work</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="card reveal">
+        <h2>About Me</h2>
+        <p>
+          I build responsive, accessible, and elegant interfaces. I enjoy turning
+          ideas into fast, maintainable web products using HTML, CSS, and
+          JavaScript.
+        </p>
+      </section>
+
+      <section id="experience" class="card reveal">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article>
+            <h3>Frontend Developer</h3>
+            <p class="meta">2023 – Present | Example Company</p>
+            <p>
+              Developed and shipped modern web pages, improved UI consistency,
+              and optimized load times for better user engagement.
+            </p>
+          </article>
+          <article>
+            <h3>Web Developer Intern</h3>
+            <p class="meta">2022 – 2023 | Startup Studio</p>
+            <p>
+              Collaborated on product pages and landing experiences, helping
+              improve conversion rates through design and interaction updates.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="card reveal">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="project">
+            <h3>Portfolio Redesign</h3>
+            <p>Built a mobile-first personal site with animated sections.</p>
+          </article>
+          <article class="project">
+            <h3>Resume Builder UI</h3>
+            <p>Created an interactive interface for generating resume layouts.</p>
+          </article>
+          <article class="project">
+            <h3>Landing Page Optimization</h3>
+            <p>Improved speed and accessibility scores across key pages.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="card reveal">
+        <h2>Skills</h2>
+        <ul class="chips">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+          <li>Accessibility</li>
+          <li>UI/UX</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card reveal">
+        <h2>Contact</h2>
+        <p>Open to internships, freelance work, and full-time opportunities.</p>
+        <p class="contact-links">
+          <a href="mailto:jack@example.com">jack@example.com</a>
+          <span>•</span>
+          <a href="#">LinkedIn</a>
+          <span>•</span>
+          <a href="#">GitHub</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Jack. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
