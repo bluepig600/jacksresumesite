@@ -26,11 +26,6 @@
         </div>
       </nav>
       <section class="hero-content">
-        <img
-          class="profile-image"
-          src="https://github.com/user-attachments/assets/c0f5ae9a-e198-4639-afcb-e725e24c3830"
-          alt="Photo of Jack Wetmore"
-        />
         <div>
           <p class="eyebrow">Student Resume</p>
           <h1>Jack Wetmore</h1>
@@ -38,11 +33,20 @@
             Student with strong work ethic looking to gain valuable experience in
             a part time job.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+12505655360">(250) 565-5360</a>
-            <a class="btn btn-secondary" href="mailto:jackwwetmore@gmail.com">Email Jack</a>
+          <div class="protected-contact">
+            <p class="protected-line">
+              <span>Phone:</span>
+              <canvas class="protected-value" data-protected-contact="heroPhone"></canvas>
+            </p>
+            <p class="protected-line">
+              <span>Email:</span>
+              <canvas class="protected-value" data-protected-contact="heroEmail"></canvas>
+            </p>
+            <p class="protected-line">
+              <span>Address:</span>
+              <canvas class="protected-value" data-protected-contact="heroAddress"></canvas>
+            </p>
           </div>
-          <p class="address">378 Riley Dr, Prince George, BC</p>
         </div>
       </section>
     </header>
@@ -113,12 +117,18 @@
           <article>
             <h3>Carolyn Deurkson</h3>
             <p>Founder and Director of Prince George Tapestry Singers</p>
-            <a href="tel:+12506407703">(250) 640-7703</a>
+            <p class="protected-line">
+              <span>Phone:</span>
+              <canvas class="protected-value" data-protected-contact="refOnePhone"></canvas>
+            </p>
           </article>
           <article>
             <h3>Bree Pruden</h3>
             <p>PGTF Coach Coordinator</p>
-            <a href="tel:+12509818576">(250) 981-8576</a>
+            <p class="protected-line">
+              <span>Phone:</span>
+              <canvas class="protected-value" data-protected-contact="refTwoPhone"></canvas>
+            </p>
           </article>
         </div>
       </section>
@@ -126,7 +136,11 @@
 
     <footer>
       <p>
-        <a href="mailto:jackwwetmore@gmail.com">jackwwetmore@gmail.com</a> •
+        <span class="protected-line">
+          <span>Email:</span>
+          <canvas class="protected-value" data-protected-contact="heroEmail"></canvas>
+        </span>
+        •
         <span id="year"></span> Jack Wetmore
       </p>
     </footer>

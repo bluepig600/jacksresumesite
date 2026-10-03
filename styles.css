@@ -75,21 +75,13 @@ footer {
   margin-top: 2rem;
   display: grid;
   gap: 1.8rem;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   padding: 2rem;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 18px;
   backdrop-filter: blur(8px);
-}
-
-.profile-image {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 20px;
-  border: 2px solid rgba(56, 189, 248, 0.45);
 }
 
 .eyebrow {
@@ -117,34 +109,29 @@ h1 {
   max-width: 60ch;
 }
 
-.hero-actions {
-  display: flex;
-  gap: 0.8rem;
-  flex-wrap: wrap;
+.protected-contact {
   margin-top: 1rem;
+  display: grid;
+  gap: 0.35rem;
 }
 
-.btn {
-  text-decoration: none;
-  padding: 0.65rem 1rem;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 0.92rem;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--accent), #0ea5e9);
-  color: #04131f;
-}
-
-.btn-secondary {
-  border: 1px solid var(--line);
-  color: var(--text);
-}
-
-.address {
+.protected-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   color: var(--muted);
-  margin-top: 0.8rem;
+  margin: 0;
+}
+
+.protected-line span:first-child {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.protected-value {
+  display: inline-block;
+  vertical-align: middle;
+  user-select: none;
 }
 
 main {
@@ -186,12 +173,6 @@ main {
   background: rgba(15, 23, 42, 0.6);
 }
 
-.references a,
-footer a {
-  color: #7dd3fc;
-  text-decoration: none;
-}
-
 footer {
   padding: 0.5rem 0 2rem;
   color: var(--muted);
@@ -216,7 +197,7 @@ footer {
     justify-items: center;
   }
 
-  .hero-actions {
+  .protected-line {
     justify-content: center;
   }
 
